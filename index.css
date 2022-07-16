@@ -1,0 +1,12 @@
+#body{
+    margin:0px;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+}
+#game{
+    box-shadow:greenyellow 10px 10px 10px ;
+}
