@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,29 @@
     <link rel="stylesheet" href="./index.css">
     <title>Document</title>
 </head>
-<body id="body" background="snake.jpg">
-    <h1>Snake</h1>
-    <canvas id="game" height="400" width="400"></canvas>
-    <Script src="index.js"></Script>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Snake Game in JavaScript</h1>
+        <canvas id="game" height="400" width="400"></canvas>
+    </div>
+    <script src="index.js"></script>
+    <script>
+        const heading = document.querySelector('.heading');
+        heading.addEventListener('mouseover', () => {
+            heading.style.transition='0.4s ease-in' ;
+            heading.style.color='blue' ;
+            heading.style.transform='scale(2.2)' ;
+            heading.innerHTML="Press any key to start" ;
+        });
+
+        heading.addEventListener('mouseout',()=>{
+            heading.innerHTML="Snake Game in JavaScript" ;
+            heading.style="Snake Game in JavaScript" ;
+            heading.style.transition='0.4s ease-out' ;
+        }) ;
+        
+    </script>
 </body>
+
 </html>
